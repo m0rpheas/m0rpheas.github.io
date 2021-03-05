@@ -1,0 +1,24 @@
+on:
+  push:
+    branches:
+      - main
+jobs:
+  updateAddons:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v1
+        with:
+          python-version: '3.x'
+
+      - name: Generate zips and xmls
+        run: python ./_repo_xml_generator.py
+
+      - name: Update addons
+        run: |
+          git config --global user.name 'm0rpheas'
+          git config --global user.email 'm0rpheas@users.noreply.github.com'
+          git add -A
+          git commit --allow-empty -m "GH-Action: Update repo"
+          git push
