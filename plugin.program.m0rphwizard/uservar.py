@@ -98,9 +98,9 @@ AUTOINSTALL = 'Yes'
 # Addon ID for the repository
 REPOID = 'repository.m0rpheas'
 # Url to Addons.xml file in your repo folder(this is so we can get the latest version)
-REPOADDONXML = 'https://raw.githubusercontent.com/m0rpheas/m0rpheas.github.io/main/zips/addons.xml'
+REPOADDONXML = 'https://raw.githubusercontent.com/m0rpheas/m0rpheas.github.io/master/zips/addons.xml'
 # Url to folder zip is located in
-REPOZIPURL = 'https://raw.githubusercontent.com/m0rpheas/m0rpheas.github.io/main/zips/'
+REPOZIPURL = 'https://raw.githubusercontent.com/m0rpheas/m0rpheas.github.io/master/zips/'
 #########################################################
 
 #########################################################
