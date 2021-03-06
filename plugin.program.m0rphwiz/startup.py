@@ -349,7 +349,7 @@ else:
 
 # POST-INSTALL FIRST RUN CHECK (ENABLE DISABLED ADDONS)
 if CONFIG.get_setting('first_postinstall') == 'true':
-	from resources.lib.common import addonsEnable
+	from resources.libs.common import addonsEnable
 	addonsEnable.enable_addons()
 	xbmc.executebuiltin('UpdateLocalAddons')
 	xbmc.executebuiltin('UpdateAddonRepos')

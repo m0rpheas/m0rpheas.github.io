@@ -5,23 +5,6 @@ from resources.libs.common.config import CONFIG
 from datetime import datetime
 from xml.dom.minidom import parse
 
-def latest_db(db):
-  if db in CONFIG.DB_FILES:
-    match = glob.glob(os.path.join(CONFIG.DATABASE, '{0}*.db'.format(db)))
-    comp = '{0}(.+?).db'.format(db[1:])
-    highest = 0
-    for file in match:
-      try:
-        check = int(re.compile(comp).findall(file)[0])
-      except:
-        check = 0
-      if highest < check:
-        highest = check
-        return '{0}{1}.db'.format(db, highest)
-  else:
-    return False
-        
-
 addon_xmls = []
 
 def enable_addons():
@@ -51,8 +34,7 @@ def enable_addons():
 	
 def enable_db(d_addon):
     """ create a database connection to a SQLite database """
-    dbfile = latest_db('Addons')
-    dbfile = os.path.join(CONFIG.DATABASE, dbfile)
+    dbfile = os.path.join(CONFIG.DATABASE, 'Addons33.db')
     conn = None
     conn = sqlite3.connect(dbfile)
     c = conn.cursor()
