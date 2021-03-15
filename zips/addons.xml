@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="repository.morpheas" name="M0rpheas Repository" version="1.0.0" provider-name="M0rpheas">
+<addon id="repository.morpheas" name="M0rpheas Repository" version="1.1" provider-name="M0rpheas">
   <extension point="xbmc.addon.repository" name="M0rpheas Repository">
     <dir>
       <info compressed="false">https://raw.githubusercontent.com/m0rpheas/m0rpheas.github.io/master/zips/addons.xml</info>
