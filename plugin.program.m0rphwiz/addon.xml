@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.m0rphwiz" name="[COLOR limegreen]M0rph[/COLOR]Wiz" version="2.0.3.1" provider-name="drinfernoo, slamious, M0rpheas">
+<addon id="plugin.program.m0rphwiz" name="[COLOR limegreen]M0rph[/COLOR]Wiz" version="2.0.4" provider-name="drinfernoo, slamious, M0rpheas">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
@@ -16,11 +16,13 @@
     
     <extension point="xbmc.addon.metadata">
         <summary lang="en">[COLOR limegreen]M0rph[/COLOR]Wiz</summary>
-        <description lang="en">[COLOR limegreen]M0rph[/COLOR]Wiz, based on drinfernoo's OpenWizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
+        <description lang="en">[COLOR limegreen]M0rph[/COLOR]Wiz, based on OpenWizard, offers many maintenance features, selective add-on data saving, and automated build installs.</description>
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <source>https://www.github.com/m0rpheas/plugin.program.m0rphwiz/</source>
         <news>
+2.0.4
+ - Fix leftover broken dialogs
 2.0.3
  - Don't show previous version builds in Matrix
 2.0.2
