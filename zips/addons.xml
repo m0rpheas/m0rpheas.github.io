@@ -20,37 +20,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.program.m0rphwizard" name="M0rphWizard" version="1.1.1" provider-name="Slam, BYB, M0rpheas">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">M0rphWizard is a lightweight wizard for installing builds on Kodi 19 Matrix. It is based on the Simple 19 Wizard template by Slam. Has some code from Aftermath Wizard by Surfacingx. Skin Switch by OpenELEQ. Base code by BYB. Credits to them and all others who contributed. Please report any bugs to @slamious on Telegram/Twitter.</summary>
-		<description lang="en_GB">Kodi 19 Wizard</description>
-		<disclaimer lang="en_GB">This Addon contains no content</disclaimer>
-		<language>en</language>
-		<platform>all</platform>
-		<license>GPL-2.0-or-later</license>
-		<forum></forum>
-		<website></website>
-		<email></email>
-		<source></source>
-		<news></news>
-		<assets>
-				<icon>resources/icon.png</icon>
-				<fanart>resources/fanart.jpg</fanart>
-				<banner></banner>
-				<clearlogo></clearlogo>
-				<screenshot></screenshot>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="plugin.program.m0rphwiz" name="[COLOR limegreen]M0rph[/COLOR]Wiz" version="2.0.3.1" provider-name="drinfernoo, slamious, M0rpheas">
+<addon id="plugin.program.m0rphwiz" name="[COLOR limegreen]M0rph[/COLOR]Wiz" version="2.0.4" provider-name="drinfernoo, slamious, M0rpheas">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
@@ -67,11 +37,13 @@
 
     <extension point="xbmc.addon.metadata">
         <summary lang="en">[COLOR limegreen]M0rph[/COLOR]Wiz</summary>
-        <description lang="en">[COLOR limegreen]M0rph[/COLOR]Wiz, based on drinfernoo's OpenWizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
+        <description lang="en">[COLOR limegreen]M0rph[/COLOR]Wiz, based on OpenWizard, offers many maintenance features, selective add-on data saving, and automated build installs.</description>
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <source>https://www.github.com/m0rpheas/plugin.program.m0rphwiz/</source>
         <news>
+2.0.4
+ - Fix leftover broken dialogs
 2.0.3
  - Don't show previous version builds in Matrix
 2.0.2
@@ -186,5 +158,35 @@
             <fanart>fanart.png</fanart>
         </assets>
     </extension>
+</addon>
+
+<addon id="plugin.program.m0rphwizard" name="M0rphWizard" version="1.1.1" provider-name="Slam, BYB, M0rpheas">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">M0rphWizard is a lightweight wizard for installing builds on Kodi 19 Matrix. It is based on the Simple 19 Wizard template by Slam. Has some code from Aftermath Wizard by Surfacingx. Skin Switch by OpenELEQ. Base code by BYB. Credits to them and all others who contributed. Please report any bugs to @slamious on Telegram/Twitter.</summary>
+		<description lang="en_GB">Kodi 19 Wizard</description>
+		<disclaimer lang="en_GB">This Addon contains no content</disclaimer>
+		<language>en</language>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source></source>
+		<news></news>
+		<assets>
+				<icon>resources/icon.png</icon>
+				<fanart>resources/fanart.jpg</fanart>
+				<banner></banner>
+				<clearlogo></clearlogo>
+				<screenshot></screenshot>
+		</assets>
+	</extension>
 </addon>
 </addons>
