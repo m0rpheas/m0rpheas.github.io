@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="repository.m0rpheas" name="M0rpheas Repository" version="1.1" provider-name="M0rpheas">
-  <extension point="xbmc.addon.repository" name="M0rpheas Repository">
-    <dir>
-      <info compressed="false">https://raw.githubusercontent.com/m0rpheas/m0rpheas.github.io/master/zips/addons.xml</info>
-      <checksum>https://raw.githubusercontent.com/m0rpheas/m0rpheas.github.io/master/zips/addons.xml.md5</checksum>
-      <datadir zip="true">https://raw.githubusercontent.com/m0rpheas/m0rpheas.github.io/master/zips/</datadir>
-    </dir>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>M0rpheas Repository</summary>
-    <description>Use content at your own risk and responsibility.</description>
-    <disclaimer></disclaimer>
-    <platform>all</platform>
-      <assets>
-        <icon>icon.png</icon>
-        <fanart>fanart.jpg</fanart>
-      </assets>
-  </extension>
+<addon id="plugin.program.m0rphwizard" name="M0rphWizard" version="1.1.1" provider-name="Slam, BYB, M0rpheas">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">M0rphWizard is a lightweight wizard for installing builds on Kodi 19 Matrix. It is based on the Simple 19 Wizard template by Slam. Has some code from Aftermath Wizard by Surfacingx. Skin Switch by OpenELEQ. Base code by BYB. Credits to them and all others who contributed. Please report any bugs to @slamious on Telegram/Twitter.</summary>
+		<description lang="en_GB">Kodi 19 Wizard</description>
+		<disclaimer lang="en_GB">This Addon contains no content</disclaimer>
+		<language>en</language>
+		<platform>all</platform>
+		<license>GPL-2.0-or-later</license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source></source>
+		<news></news>
+		<assets>
+				<icon>resources/icon.png</icon>
+				<fanart>resources/fanart.jpg</fanart>
+				<banner></banner>
+				<clearlogo></clearlogo>
+				<screenshot></screenshot>
+		</assets>
+	</extension>
 </addon>
 
 <addon id="plugin.program.m0rphwiz" name="[COLOR limegreen]M0rph[/COLOR]Wiz" version="2.0.4" provider-name="drinfernoo, slamious, M0rpheas">
@@ -160,33 +170,23 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.m0rphwizard" name="M0rphWizard" version="1.1.1" provider-name="Slam, BYB, M0rpheas">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en_GB">M0rphWizard is a lightweight wizard for installing builds on Kodi 19 Matrix. It is based on the Simple 19 Wizard template by Slam. Has some code from Aftermath Wizard by Surfacingx. Skin Switch by OpenELEQ. Base code by BYB. Credits to them and all others who contributed. Please report any bugs to @slamious on Telegram/Twitter.</summary>
-		<description lang="en_GB">Kodi 19 Wizard</description>
-		<disclaimer lang="en_GB">This Addon contains no content</disclaimer>
-		<language>en</language>
-		<platform>all</platform>
-		<license>GPL-2.0-or-later</license>
-		<forum></forum>
-		<website></website>
-		<email></email>
-		<source></source>
-		<news></news>
-		<assets>
-				<icon>resources/icon.png</icon>
-				<fanart>resources/fanart.jpg</fanart>
-				<banner></banner>
-				<clearlogo></clearlogo>
-				<screenshot></screenshot>
-		</assets>
-	</extension>
+<addon id="repository.m0rpheas" name="M0rpheas Repository" version="1.1" provider-name="M0rpheas">
+  <extension point="xbmc.addon.repository" name="M0rpheas Repository">
+    <dir>
+      <info compressed="false">https://raw.githubusercontent.com/m0rpheas/m0rpheas.github.io/master/zips/addons.xml</info>
+      <checksum>https://raw.githubusercontent.com/m0rpheas/m0rpheas.github.io/master/zips/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.githubusercontent.com/m0rpheas/m0rpheas.github.io/master/zips/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>M0rpheas Repository</summary>
+    <description>Use content at your own risk and responsibility.</description>
+    <disclaimer></disclaimer>
+    <platform>all</platform>
+      <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+      </assets>
+  </extension>
 </addon>
 </addons>
